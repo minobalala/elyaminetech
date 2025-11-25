@@ -1,0 +1,224 @@
+[elyaminetech_futuristic_enhanced1.html](https://github.com/user-attachments/files/23757379/elyaminetech_futuristic_enhanced1.html)
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>ElyamineTech — Enhanced Cyber Neon</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg-1:#00030a; --bg-2:#001428; --neon:#00e6ff; --accent:#7c00ff;
+  --glass: rgba(255,255,255,0.03); --card-radius:18px; --text:#dbeefe;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{font-family:"Cairo", system-ui, Arial; background:linear-gradient(180deg,var(--bg-1),var(--bg-2)); color:var(--text);}
+.container{max-width:1200px;margin:28px auto;padding:28px;position:relative}
+.nav{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,#00213a, #001224);display:grid;place-items:center;border:1px solid rgba(0,230,255,0.06);box-shadow:0 8px 40px rgba(0,230,255,0.03) inset}
+.logo span{font-family:"Orbitron";font-weight:700;color:var(--neon);letter-spacing:1px}
+.site-title{font-family:"Orbitron";font-size:1.2rem}
+.controls{display:flex;gap:8px;align-items:center}
+.lang-toggle button, .mode-toggle button{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 10px;border-radius:999px;color:#cfe9fb;cursor:pointer}
+.lang-toggle button.active{background:var(--neon);color:#001018}
+.mode-toggle button.active{background:var(--accent);color:#fff}
+.hero{display:grid;grid-template-columns:1fr 420px;gap:28px;margin-top:22px;align-items:center}
+.hero-card{padding:26px;border-radius:20px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border:1px solid rgba(0,230,255,0.06);backdrop-filter:blur(6px);box-shadow:0 10px 40px rgba(0,0,0,0.6)}
+.h-title{font-family:"Orbitron";font-size:2.4rem;color:#eaffff}
+.h-sub{margin-top:10px;color:#bcdff6}
+.cta-row{display:flex;gap:12px;margin-top:18px}
+.btn-primary{padding:12px 18px;border-radius:999px;background:linear-gradient(90deg,var(--neon),#8b5cf6);color:#001018;font-weight:800;text-decoration:none}
+.btn-ghost{padding:12px 18px;border-radius:999px;border:1px solid rgba(255,255,255,0.06);color:#cfe9fb;text-decoration:none}
+.info-box{margin-top:18px;color:#bcdff6}
+.aside-panel{padding:18px;border-radius:14px;background:linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.02)}
+.kpi{display:flex;gap:12px;align-items:center;justify-content:space-between}
+.kpi .item{flex:1;padding:8px;border-radius:12px;background:rgba(255,255,255,0.02);text-align:center}
+.section{margin-top:28px}
+.section .sec-title{font-family:"Orbitron";font-size:1.2rem;margin-bottom:12px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.card{padding:16px;border-radius:14px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(0,230,255,0.04);min-height:140px;display:flex;flex-direction:column;gap:12px}
+.card h4{margin-top:6px}
+.product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}
+.prod{padding:12px;border-radius:12px;background:linear-gradient(180deg, rgba(0,0,0,0.25), rgba(255,255,255,0.02));text-align:center;border:1px solid rgba(255,255,255,0.03)}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.gallery img{width:100%;height:120px;object-fit:cover;border-radius:8px}
+.contact{display:grid;grid-template-columns:1fr 320px;gap:18px}
+.form{display:flex;flex-direction:column;gap:10px}
+.input, textarea{padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--text)}
+textarea{min-height:140px}
+.wapp{display:flex;gap:8px;align-items:center}
+.footer{margin-top:28px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(255,255,255,0.02);padding-top:12px;color:#9fb3c8}
+.small{font-size:0.9rem;color:#9fb3c8}
+.badge{display:inline-block;padding:6px 10px;border-radius:999px;background:linear-gradient(90deg, rgba(0,230,255,0.06), rgba(124,0,255,0.04));border:1px solid rgba(0,230,255,0.06)}
+/* neon accents */
+.neon-outline{box-shadow:0 6px 28px rgba(0,230,255,0.06),0 0 14px rgba(0,230,255,0.04)}
+/* responsive */
+@media (max-width:980px){.hero{grid-template-columns:1fr} .contact{grid-template-columns:1fr}}
+@media (max-width:560px){.gallery{grid-template-columns:repeat(2,1fr)} }
+</style>
+</head>
+<body>
+<div class="container">
+  <nav class="nav">
+    <div class="brand">
+      <div class="logo"><span>E</span></div>
+      <div>
+        <div class="site-title">ElyamineTech</div>
+        <div class="small">خدمات الإعلام الآلي وملحقاته — Informatique & Accessoires</div>
+      </div>
+    </div>
+    <div class="controls">
+      <div class="lang-toggle" aria-label="language toggle">
+        <button id="btn-ar" class="active">AR</button>
+        <button id="btn-fr">FR</button>
+      </div>
+      <div class="mode-toggle" aria-label="mode toggle">
+        <button id="mode-btn">Dark</button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-card">
+      <div class="h-title" id="main-title">أهلاً — ElyamineTech</div>
+      <div class="h-sub" id="subtitle">صيانة، ملحقات، وتركيبات للحواسيب والهواتف — Maintenance & Accessories</div>
+      <p class="info-box" id="hero-desc">نقدّم حلول سريعة ومحترفة في صيانة الأجهزة، بيع إكسسوارات أصلية، وتركيب الأنظمة. زرّ WhatsApp للاتصال الفوري أو تصفّح العروض أدناه.</p>
+      <div class="cta-row">
+        <a href="#contact" class="btn-primary">تواصل الآن</a>
+        <a href="#services" class="btn-ghost">خدماتنا</a>
+      </div>
+      <div style="margin-top:14px" class="kpi">
+        <div class="item small">🔧 إصلاحات: <strong>+1200</strong></div>
+        <div class="item small">📦 منتجات: <strong>+300</strong></div>
+        <div class="item small">⭐ تقييم: <strong>4.8</strong></div>
+      </div>
+    </div>
+
+    <aside class="aside-panel neon-outline">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <div class="small">روابط سريعة</div>
+        <div class="badge">WhatsApp</div>
+      </div>
+      <div style="margin-top:12px;display:flex;flex-direction:column;gap:10px">
+        <a class="btn-ghost" href="https://www.facebook.com/share/1JDBENKprV/" target="_blank">📘 Facebook</a>
+        <a class="btn-ghost" href="https://t.me/+213797345843" target="_blank">✈️ Telegram</a>
+        <a class="btn-ghost" href="https://wa.me/213797345843" target="_blank">💬 WhatsApp</a>
+        <a class="btn-ghost" href="https://www.tiktok.com/@elyatech?_r=1&_t=ZS-91hm2JlPL1k" target="_blank">🎵 TikTok</a>
+        <a class="btn-ghost" href="https://www.instagram.com/elyaminetech?igsh=cnVzbGxrdXU5Z2s=" target="_blank">📸 Instagram</a>
+        <a class="btn-ghost" href="mailto:elyamineykh@gmail.com" target="_blank">📧 Gmail</a>
+      </div>
+      <div style="margin-top:18px;font-size:0.95rem;color:#9fb3c8">
+        📞 <strong>0797345843</strong>
+      </div>
+    </aside>
+  </section>
+
+  <section id="services" class="section">
+    <div class="sec-title">خدماتنا — Nos Services</div>
+    <div class="cards">
+      <div class="card">
+        <div style="font-size:1.1rem;font-weight:700">صيانة الحواسيب والهواتف</div>
+        <div>إصلاحات برمجية وعتادية، تحديثات، استرجاع بيانات، وصيانة سريعة مع ضمان.</div>
+      </div>
+      <div class="card">
+        <div style="font-size:1.1rem;font-weight:700">بيع الاكسسوارات</div>
+        <div>سماعات، شواحن، بطاريات، ميكروفونات، ساعات ذكية، وطابعات صغيرة.</div>
+      </div>
+      <div class="card">
+        <div style="font-size:1.1rem;font-weight:700">تركيب الشبكات والأنظمة</div>
+        <div>شبكات محلية، تركيب راوترات، حلول مراقبة بسيطة وخدمات إعدادات أمنية.</div>
+      </div>
+      <div class="card">
+        <div style="font-size:1.1rem;font-weight:700">خدمات رقمية</div>
+        <div>تنصيب برامج، استرجاع حسابات، خدمات نقل ملفات وعروض خاصة لمحلات صغيرة.</div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section class="section">
+    <div class="sec-title">معرض الصور — Gallery</div>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=60" alt="work">
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=60" alt="shop">
+      <img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&w=800&q=60" alt="repair">
+      <img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=800&q=60" alt="accessories">
+    </div>
+  </section>
+
+  
+
+    <section class="section" id="map-section">
+    <div class="sec-title">موقع المحل على الخريطة — Location</div>
+    <div style="margin-top:12px">
+      <iframe width="100%" height="300" style="border:0;border-radius:12px" loading="lazy" allowfullscreen
+        src="https://www.google.com/maps?q=34.84300682844132,5.79351085642317&z=16&output=embed">
+      </iframe>
+    </div>
+  </section>
+
+<footer class="footer">
+    <div>© <strong>ElyamineTech</strong> — جميع الحقوق محفوظة</div>
+    <div>
+      <span class="small">تصميم مُطوّر — نسخة Cyber Neon</span>
+    </div>
+  </footer>
+</div>
+
+<script>
+// language toggle
+const btnAR = document.getElementById('btn-ar');
+const btnFR = document.getElementById('btn-fr');
+const mainTitle = document.getElementById('main-title');
+const subtitle = document.getElementById('subtitle');
+const heroDesc = document.getElementById('hero-desc');
+function setLang(lang){
+  if(lang==='ar'){
+    btnAR.classList.add('active'); btnFR.classList.remove('active');
+    document.documentElement.dir='rtl';
+    mainTitle.textContent='أهلاً — ElyamineTech';
+    subtitle.textContent='صيانة، ملحقات، وتركيبات للحواسيب والهواتف — Maintenance & Accessories';
+    heroDesc.textContent='نقدّم حلول سريعة ومحترفة في صيانة الأجهزة، بيع إكسسوارات أصلية، وتركيب الأنظمة. زرّ WhatsApp للاتصال الفوري أو تصفّح العروض أدناه.';
+  }else{
+    btnFR.classList.add('active'); btnAR.classList.remove('active');
+    document.documentElement.dir='ltr';
+    mainTitle.textContent='Bienvenue — ElyamineTech';
+    subtitle.textContent='Maintenance, accessoires et installations pour ordinateurs et téléphones';
+    heroDesc.textContent="Nous offrons des solutions rapides et professionnelles : réparation, vente d'accessoires et installations. Contactez-nous via WhatsApp ou parcourez nos offres.";
+  }
+}
+btnAR.addEventListener('click',()=>setLang('ar'));
+btnFR.addEventListener('click',()=>setLang('fr'));
+setLang('ar');
+
+// dark/light toggle simple
+const modeBtn = document.getElementById('mode-btn');
+let dark = true;
+modeBtn.addEventListener('click', ()=>{
+  dark = !dark;
+  if(!dark){
+    document.body.style.background = 'linear-gradient(180deg,#f8fafc,#e6f0ff)';
+    document.body.style.color = '#04111a';
+    modeBtn.classList.add('active'); modeBtn.textContent='Light';
+  }else{
+    document.body.style.background = 'linear-gradient(180deg,var(--bg-1),var(--bg-2))';
+    document.body.style.color = 'var(--text)';
+    modeBtn.classList.remove('active'); modeBtn.textContent='Dark';
+  }
+});
+
+function handleForm(e){
+  e.preventDefault();
+  const n = document.getElementById('name').value;
+  const p = document.getElementById('phone').value;
+  const m = document.getElementById('message').value;
+  const text = encodeURIComponent(`مرحباً ${n}%0A${m}%0Aالهاتف: ${p}`);
+  window.open(`https://wa.me/0797345843?text=${text}`,'_blank');
+}
+</script>
+</body>
+</html>
